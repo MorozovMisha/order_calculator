@@ -1,5 +1,5 @@
 from typing import List, Dict
-
+import pytest
 class OrderCalculator:
     TAX_RATE = 0.15  # 15% налог
     DISCOUNT_THRESHOLD = 10000
