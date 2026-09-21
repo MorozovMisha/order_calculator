@@ -4,6 +4,7 @@ class OrderCalculator:
     TAX_RATE = 0.15  # 15% налог
     DISCOUNT_THRESHOLD = 1000
     DISCOUNT_RATE = 0.1  # 10% скидка
+    TEST_TEST = 0.2 #для второй лабы
 
     def __init__(self, items: List[Dict[str, float]]):
         """
@@ -18,7 +19,7 @@ class OrderCalculator:
         total = 0
         for item in self.items:
             if item['price'] < 0 or item['quantity'] < 0:
-                raise ValueError("Цена и количество не могут быть отрицательными.")
+                raise ValueError("Цена и количество не могут быть отрицательными...")
             total += item['price'] * item['quantity']
 
         if total >= self.DISCOUNT_THRESHOLD:
