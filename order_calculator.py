@@ -2,7 +2,7 @@ from typing import List, Dict
 
 class OrderCalculator:
     TAX_RATE = 0.15  # 15% налог
-    DISCOUNT_THRESHOLD = 10000
+    DISCOUNT_THRESHOLD = 1000
     DISCOUNT_RATE = 0.1  # 10% скидка
 
     def __init__(self, items: List[Dict[str, float]]):
